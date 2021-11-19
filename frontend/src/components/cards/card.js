@@ -1,17 +1,17 @@
 import { useEffect, useState } from 'react';
 import './card.css';
-import Tmdb from '../../tmdb';
+import Produtos from '../../api_produtos';
 import CardsList from './cards';
 
 const Card = () => {
 
-    const [listaDeFilmes, setListaDeFilmes] = useState([]);
+    const [listaDeProdutos, setListaDeProdutos] = useState([]);
 
     useEffect(()=>{
         const carregarCards = async () => {
             //Carregando cards testes
-            let lista = await Tmdb.getOriginaisNetflix();
-            setListaDeFilmes(lista);
+            let lista = await Produtos.getProdutos();
+            setListaDeProdutos(lista);
         }
 
         carregarCards();
@@ -19,7 +19,7 @@ const Card = () => {
 
     return (
         <div className="main-content-cards">
-            {listaDeFilmes.map((item, key)=>(
+            {listaDeProdutos.map((item, key)=>(
                 <CardsList key={key} title={item.title} items={item.items}/>
             ))}
         </div>
