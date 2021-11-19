@@ -1,0 +1,21 @@
+.navbar-projeto {
+   background: grey;
+   height: 60px;
+   display: flex;
+   align-items: center;
+   justify-content: center; 
+   padding: 1.5rem;
+   border-bottom: 1px solid lightgray;
+}
+
+.navbar > a {
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+    transition: 2s;
+}
+
+.navbar > a:hover {
+    color: lightgray;
+    zoom: 120%;
+}

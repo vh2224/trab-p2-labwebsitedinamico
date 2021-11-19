@@ -1,0 +1,29 @@
+POST http://localhost:8080/produto
+Content-Type: application/json
+Accept: application/json
+
+
+{
+  "id": 5,
+  "nome": "Tenis",
+  "descricao": "Todo mundo usa",
+  "fotoUrl": "https://havaianas.com.br/dw/image",
+  "qtdEstoque": 7,
+  "valorUnitario": "199.90",
+  "categoriaList": [
+    {
+      "id": 2
+    }
+  ]
+}
+
+
+###
+
+GET http://localhost:8080/produto?nome=Tenis&valorMinimo=50&valorMaximo=350
+Accept: application/json
+
+###
+
+GET http://localhost:8080/produto
+Accept: application/json

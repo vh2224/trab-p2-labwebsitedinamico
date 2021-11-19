@@ -1,0 +1,56 @@
+.main-cards {
+  display: grid;
+  max-width: 1000px;
+  margin: auto;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.card {
+  margin: 2rem 0.5rem 1rem;
+  display: flex;
+  width: 215px;
+  height: 500px;
+  flex-direction: column;
+}
+
+.card > img {
+  height: 8.25rem;
+  width: auto;
+  object-fit: contain;
+}
+
+.nome-produto {
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  font-weight: 600;
+  margin-top: 0.5rem;
+  color: rgb(66, 70, 77);
+}
+
+.valor-produto {
+  font-size: 1.5rem;
+  line-height: 2.125rem;
+  font-weight: 700;
+  color: rgb(255, 101, 0);
+}
+
+.estoque {
+  font-size: 0.75rem;
+  line-height: 1.125rem;
+  font-weight: 400;
+  height: 1.125rem;
+  color: rgb(127, 133, 141);
+}
+
+.acessar-produto {
+    font-size: 0.75rem;
+    line-height: 1.125rem;
+    font-weight: 700;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 30px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    background: rgb(255, 101, 0);
+}
